@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import { useTheme } from './context/ThemeContext'
 import Navbar from './components/Navbar'
+import LandmarkBackground from './components/LandmarkBackground'
 import CountrySelector from './pages/CountrySelector'
 import CountryHome from './pages/CountryHome'
 import KeySectors from './pages/KeySectors'
@@ -17,6 +18,8 @@ export default function App() {
       data-theme={isDark ? 'dark' : 'light'}
       className="min-h-screen bg-[var(--bg-page)] text-purple-950 dark:text-white transition-colors duration-150"
     >
+      <LandmarkBackground />
+      <div className="relative z-10">
       <Navbar />
       <Routes>
         <Route path="/" element={<CountrySelector />} />
@@ -27,6 +30,7 @@ export default function App() {
         <Route path="/country/india/blog" element={<CountryBlog />} />
         <Route path="/country/india/suggest" element={<Suggestion />} />
       </Routes>
+      </div>
     </div>
   )
 }
