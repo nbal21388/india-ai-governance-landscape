@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import { useTheme } from './context/ThemeContext'
 import Navbar from './components/Navbar'
 import CountrySelector from './pages/CountrySelector'
 import CountryHome from './pages/CountryHome'
@@ -9,8 +10,13 @@ import Suggestion from './pages/Suggestion'
 import CountryBlog from './pages/CountryBlog'
 
 export default function App() {
+  const { isDark } = useTheme()
+
   return (
-    <div className="min-h-screen bg-[#0d0820] text-white">
+    <div
+      data-theme={isDark ? 'dark' : 'light'}
+      className="min-h-screen bg-[var(--bg-page)] text-purple-950 dark:text-white transition-colors duration-150"
+    >
       <Navbar />
       <Routes>
         <Route path="/" element={<CountrySelector />} />

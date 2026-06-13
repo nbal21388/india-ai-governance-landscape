@@ -1,11 +1,22 @@
 @import "tailwindcss";
 
+/* Class-based dark mode: apply dark: variants when data-theme="dark" is on any ancestor */
+@variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
 @layer base {
+  :root {
+    --bg-page: #f9f7ff;
+    --bg-card: #ffffff;
+    --bg-nav: #ffffff;
+  }
+  [data-theme=dark] {
+    --bg-page: #0d0820;
+    --bg-card: #130d2e;
+    --bg-nav: #09051a;
+  }
   html, body {
     margin: 0;
     padding: 0;
-    background-color: #0d0820;
-    color: #f0eeff;
     -webkit-font-smoothing: antialiased;
   }
   #root {
