@@ -410,7 +410,7 @@ export const indiaData = {
       id: 'int2',
       title: 'Establish an Independent AI Safety and Accountability Authority',
       description:
-        'Create an AI Safety & Accountability Authority (AISAA) as a statutory body separate from MeitY. The AISAA would: conduct red-team evaluations of high-risk AI systems deployed in India; maintain an AI incident registry; issue technical safety standards for foundation models; and represent India in international AI safety forums with an independent mandate rather than a ministry brief.',
+        'Create an AI Safety initiative as a statutory body separate from MeitY. The initiative would: conduct red-team evaluations of high-risk AI systems deployed in India; maintain an AI incident registry; issue technical safety standards for foundation models; and represent India in international AI safety forums with an independent mandate rather than a ministry brief.',
       rationale:
         'The IndiaAI Mission\'s Safe & Trusted AI pillar is housed within MeitY, creating a conflict of interest (the same ministry promotes and audits). An independent body modelled on SEBI (which is independent from the Finance Ministry) or TRAI would provide regulatory credibility. This is particularly important as India pushes Bhashini and domestic LLMs — an independent safety authority would add global credibility to Indian AI exports.',
     },
