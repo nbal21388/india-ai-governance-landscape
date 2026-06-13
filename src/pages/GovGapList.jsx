@@ -12,7 +12,7 @@ export default function GovGapList() {
             <h1 className="text-2xl font-bold text-purple-950 dark:text-white tracking-tight">Governance Gaps</h1>
           </div>
           <p className="text-purple-500 dark:text-purple-400 text-sm">
-            The top three structural gaps in India\'s AI governance, tied to cultural norms and geopolitical context.
+            The top three structural gaps in India's AI governance, tied to cultural norms and geopolitical context.
           </p>
         </div>
 
