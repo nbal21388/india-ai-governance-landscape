@@ -26,7 +26,7 @@ const sectionLinks = [
   { label: 'Key Sectors', path: '/country/india/sectors', icon: '⬡' },
   { label: 'Guidelines', path: '/country/india/guidelines', icon: '📋' },
   { label: 'Governance Gaps', path: '/country/india/gaps', icon: '⚠' },
-  { label: 'Blog', path: '/country/india/blog', icon: '✦' },
+  { label: 'News', path: '/country/india/blog', icon: '✦' },
 ]
 
 export default function CountrySelector() {

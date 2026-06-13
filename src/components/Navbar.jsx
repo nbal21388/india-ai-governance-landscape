@@ -6,7 +6,7 @@ const countryNav = [
   { label: 'Key Sectors', to: '/country/india/sectors' },
   { label: 'Guidelines', to: '/country/india/guidelines' },
   { label: 'Governance Gaps', to: '/country/india/gaps' },
-  { label: 'Blog', to: '/country/india/blog' },
+  { label: 'News', to: '/country/india/blog' },
   { label: 'Suggest an Edit', to: '/country/india/suggest' },
 ]
 

@@ -30,7 +30,7 @@ const sections = [
     accent: 'text-fuchsia-600 dark:text-fuchsia-400',
   },
   {
-    label: 'Blog & Updates',
+    label: 'News & Updates',
     to: '/country/india/blog',
     icon: '✦',
     description: 'Latest analysis and news on AI governance in India.',
@@ -74,7 +74,7 @@ export default function CountryHome() {
             ['Governance Gaps', meta.stats.gaps],
             ['Safety Concerns', meta.stats.safetyConcerns],
             ['Targeted Interventions', meta.stats.interventions],
-            ['Blog Posts', meta.stats.blogPosts],
+            ['News Posts', meta.stats.blogPosts],
           ].map(([label, value]) => (
             <div
               key={label}

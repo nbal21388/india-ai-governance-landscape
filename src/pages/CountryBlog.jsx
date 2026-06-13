@@ -21,7 +21,7 @@ export default function CountryBlog() {
     <div className="max-w-5xl mx-auto px-6 py-10">
       <div className="mb-8">
         <h1 className="text-2xl font-bold text-purple-950 dark:text-white tracking-tight mb-2">
-          India AI Governance — Blog & Updates
+          India AI Governance News & Updates
         </h1>
         <p className="text-purple-500 dark:text-purple-400 text-sm">
           Analysis, commentary, and news on AI governance developments in India.
@@ -84,7 +84,7 @@ export default function CountryBlog() {
 
       <div className="mt-10 p-4 bg-purple-50 dark:bg-purple-950/30 border border-purple-100 dark:border-purple-900/40 rounded-xl text-center">
         <p className="text-purple-400 dark:text-purple-500 text-xs">
-          Blog posts are hardcoded for research purposes. Links point to # as placeholders.
+          News posts are hardcoded for research purposes. Links point to # as placeholders.
           Want to contribute a post?{' '}
           <a href="/country/india/suggest" className="text-purple-600 dark:text-purple-300 hover:text-purple-900 dark:hover:text-white underline">
             Suggest a submission
