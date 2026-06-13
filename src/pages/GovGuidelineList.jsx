@@ -117,7 +117,7 @@ export default function GovGuidelineList() {
         <h1 className="text-3xl font-bold text-purple-950 dark:text-white tracking-tight mb-1">
           AI Governance & Safety Landscape
         </h1>
-        <p className="text-purple-500 dark:text-purple-400 text-sm">A structured overview of India\'s AI governance frameworks, institutions, and policy discourse.</p>
+        <p className="text-purple-500 dark:text-purple-400 text-sm">A structured overview of India's AI governance frameworks, institutions, and policy discourse.</p>
       </div>
 
       <section>
