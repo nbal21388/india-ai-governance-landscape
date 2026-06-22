@@ -119,57 +119,55 @@ function QutubMinar({ className }) {
   )
 }
 
-// Lotus Temple — 27 marble petal shell rising from wide platform with reflecting pools
+// Lotus Temple — petal spike silhouette: 3 small low + 4 tall inward + 1 center tall
 function LotusTemple({ className }) {
   return (
-    <svg viewBox="0 0 220 200" fill="none" className={className} aria-hidden="true">
-      {/* Reflecting pools flanking the base */}
-      <rect x="6" y="186" width="68" height="10" rx="5" strokeWidth="1.2" stroke="currentColor" />
-      <rect x="146" y="186" width="68" height="10" rx="5" strokeWidth="1.2" stroke="currentColor" />
+    <svg viewBox="0 0 220 208" fill="none" className={className} aria-hidden="true">
+      {/* Reflecting pools — left and right of the platform */}
+      <rect x="4" y="196" width="62" height="10" rx="5" strokeWidth="1.2" stroke="currentColor" />
+      <rect x="154" y="196" width="62" height="10" rx="5" strokeWidth="1.2" stroke="currentColor" />
 
-      {/* Stepped platform — 3 tiers */}
-      <rect x="8" y="176" width="204" height="12" rx="1" strokeWidth="1.5" stroke="currentColor" />
-      <rect x="22" y="163" width="176" height="15" rx="1" strokeWidth="1.5" stroke="currentColor" />
-      <rect x="38" y="152" width="144" height="13" rx="1" strokeWidth="1.5" stroke="currentColor" />
+      {/* Stepped base platform — 3 tiers */}
+      <rect x="8" y="186" width="204" height="12" rx="1" strokeWidth="1.5" stroke="currentColor" />
+      <rect x="20" y="173" width="180" height="15" rx="1" strokeWidth="1.5" stroke="currentColor" />
+      <rect x="34" y="161" width="152" height="14" rx="1" strokeWidth="1.5" stroke="currentColor" />
 
-      {/* OUTER PETAL SHELL — the defining lotus form */}
-      {/* Overall outer envelope: sweeps wide at base, curves dramatically inward at top */}
-      {/* Left outer edge */}
-      <path d="M38 152 C14 130 8 96 20 60 C30 76 38 66 50 60 C44 96 40 128 38 152Z"
+      {/* 4 TALL INWARD-LEANING SPIKES — 2 on each side, tips angled toward center */}
+      {/* Far-left: base x=34-58, tip leans in to (68, 80) */}
+      <path d="M34 161 C34 134 46 108 68 80 C64 108 56 134 58 161"
             strokeWidth="1.5" stroke="currentColor" />
-      {/* Second petal from left */}
-      <path d="M60 152 C40 128 36 92 48 58 C58 74 68 66 80 60 C76 94 68 128 60 152Z"
+      {/* Near-left: base x=65-88, tip leans in to (93, 66) */}
+      <path d="M65 161 C65 126 75 98 93 66 C93 98 87 128 88 161"
             strokeWidth="1.5" stroke="currentColor" />
-      {/* Centre-left petal */}
-      <path d="M84 152 C68 128 66 90 76 56 C86 74 100 66 114 56 C124 90 152 128 136 152Z"
+      {/* Near-right: base x=132-155, tip leans in to (127, 66) */}
+      <path d="M132 161 C133 128 127 98 127 66 C145 98 155 126 155 161"
             strokeWidth="1.5" stroke="currentColor" />
-      {/* Centre-right petal */}
-      <path d="M136 152 C152 128 156 92 144 58 C134 74 122 66 110 60 C106 94 124 128 136 152Z"
-            strokeWidth="1.5" stroke="currentColor" />
-      {/* Second petal from right */}
-      <path d="M160 152 C180 128 184 92 172 58 C162 74 152 66 140 60 C144 94 152 128 160 152Z"
-            strokeWidth="1.5" stroke="currentColor" />
-      {/* Right outer edge */}
-      <path d="M182 152 C206 130 212 96 200 60 C190 76 182 66 170 60 C176 96 180 128 182 152Z"
+      {/* Far-right: base x=162-186, tip leans in to (152, 80) */}
+      <path d="M162 161 C162 134 158 108 152 80 C174 108 186 134 186 161"
             strokeWidth="1.5" stroke="currentColor" />
 
-      {/* MIDDLE PETAL LAYER — partially visible between outer petals */}
-      <path d="M50 148 C36 122 34 88 46 58" strokeWidth="1.2" stroke="currentColor" />
-      <path d="M76 148 C62 120 58 84 70 54" strokeWidth="1.2" stroke="currentColor" />
-      <path d="M110 148 C104 120 104 84 110 52" strokeWidth="1.2" stroke="currentColor" />
-      <path d="M144 148 C158 120 162 84 150 54" strokeWidth="1.2" stroke="currentColor" />
-      <path d="M170 148 C184 122 186 88 174 58" strokeWidth="1.2" stroke="currentColor" />
+      {/* Subtle crown arc connecting the near-spike tips */}
+      <path d="M93 66 Q110 50 127 66" strokeWidth="1.2" stroke="currentColor" />
 
-      {/* CROWN — where all petals converge at the top */}
-      <path d="M20 60 C30 34 50 22 110 18 C170 22 190 34 200 60"
-            strokeWidth="1.5" stroke="currentColor" />
-      <ellipse cx="110" cy="16" rx="28" ry="10" strokeWidth="1.4" stroke="currentColor" />
-      <ellipse cx="110" cy="12" rx="14" ry="6" strokeWidth="1.2" stroke="currentColor" />
+      {/* 3 SMALL SPIKES low at the bottom — tight center cluster */}
+      {/* Left small */}
+      <path d="M87 161 C87 152 91 143 95 136 C99 143 103 152 103 161"
+            strokeWidth="1.4" stroke="currentColor" />
+      {/* Center small */}
+      <path d="M101 161 C101 150 106 140 110 132 C114 140 119 150 119 161"
+            strokeWidth="1.4" stroke="currentColor" />
+      {/* Right small */}
+      <path d="M117 161 C117 152 121 143 125 136 C129 143 133 152 133 161"
+            strokeWidth="1.4" stroke="currentColor" />
 
-      {/* Nine entrance portals at base of shell */}
-      <path d="M52 152 L52 136 Q62 124 72 136 L72 152" strokeWidth="1.1" stroke="currentColor" />
-      <path d="M96 152 L96 136 Q110 122 124 136 L124 152" strokeWidth="1.1" stroke="currentColor" />
-      <path d="M148 152 L148 136 Q158 124 168 136 L168 152" strokeWidth="1.1" stroke="currentColor" />
+      {/* CENTER BIG SPIKE — tallest, innermost petal, rises through the small cluster */}
+      <path d="M103 161 C103 126 107 88 110 44 C113 88 117 126 117 161"
+            strokeWidth="1.6" stroke="currentColor" />
+
+      {/* Crown finial */}
+      <ellipse cx="110" cy="40" rx="11" ry="5" strokeWidth="1.4" stroke="currentColor" />
+      <line x1="110" y1="35" x2="110" y2="24" strokeWidth="1.4" stroke="currentColor" />
+      <circle cx="110" cy="22" r="3" strokeWidth="1.3" stroke="currentColor" />
     </svg>
   )
 }
