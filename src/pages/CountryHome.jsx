@@ -106,7 +106,7 @@ export default function CountryHome() {
 
       <div className="mt-10 p-4 bg-purple-50 dark:bg-purple-950/40 border border-purple-100 dark:border-purple-900/50 rounded-xl text-center">
         <p className="text-purple-400 dark:text-purple-400 text-xs">
-          Data last updated: June 2025 · All information is hardcoded for research purposes ·{' '}
+          Data last updated: June 2025 · Data compiled for research purposes · Built at Breaking Barriers to AI Safety Hackathon by the London Initiative of AI Safety ·{' '}
           <Link to="/country/india/suggest" className="text-purple-600 dark:text-purple-300 hover:text-purple-900 dark:hover:text-white underline">
             Suggest a correction
           </Link>
