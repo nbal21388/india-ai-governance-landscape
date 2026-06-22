@@ -119,68 +119,157 @@ function QutubMinar({ className }) {
   )
 }
 
-// Lotus Temple — petal roof
+// Lotus Temple — 27 marble petal shell rising from wide platform with reflecting pools
 function LotusTemple({ className }) {
   return (
-    <svg viewBox="0 0 200 180" fill="none" className={className} aria-hidden="true">
-      {/* Reflecting pool / base */}
-      <ellipse cx="100" cy="165" rx="90" ry="10" strokeWidth="1.5" stroke="currentColor" />
-      {/* Stepped platform */}
-      <path d="M36 164 L36 152 L164 152 L164 164" strokeWidth="1.5" stroke="currentColor" />
-      <path d="M50 152 L50 142 L150 142 L150 152" strokeWidth="1.5" stroke="currentColor" />
-      {/* Outer petals — 9 large petals forming the shell */}
-      <path d="M100 142 Q68 120 60 80 Q80 90 100 82 Q120 90 140 80 Q132 120 100 142Z" strokeWidth="1.5" stroke="currentColor" />
-      <path d="M60 80 Q40 60 46 30 Q62 50 76 44 Q72 68 60 80Z" strokeWidth="1.5" stroke="currentColor" />
-      <path d="M140 80 Q160 60 154 30 Q138 50 124 44 Q128 68 140 80Z" strokeWidth="1.5" stroke="currentColor" />
-      <path d="M46 30 Q44 4 70 8 Q66 26 76 44 Q60 38 46 30Z" strokeWidth="1.5" stroke="currentColor" />
-      <path d="M154 30 Q156 4 130 8 Q134 26 124 44 Q140 38 154 30Z" strokeWidth="1.5" stroke="currentColor" />
-      {/* Inner petals */}
-      <path d="M100 130 Q78 112 76 88 Q88 96 100 92 Q112 96 124 88 Q122 112 100 130Z" strokeWidth="1.2" stroke="currentColor" />
-      {/* Center opening */}
-      <ellipse cx="100" cy="88" rx="16" ry="10" strokeWidth="1.2" stroke="currentColor" />
-      {/* Entrance arches at base */}
-      <path d="M68 142 L68 128 Q76 118 84 128 L84 142" strokeWidth="1.2" stroke="currentColor" />
-      <path d="M116 142 L116 128 Q124 118 132 128 L132 142" strokeWidth="1.2" stroke="currentColor" />
+    <svg viewBox="0 0 220 200" fill="none" className={className} aria-hidden="true">
+      {/* Reflecting pools flanking the base */}
+      <rect x="6" y="186" width="68" height="10" rx="5" strokeWidth="1.2" stroke="currentColor" />
+      <rect x="146" y="186" width="68" height="10" rx="5" strokeWidth="1.2" stroke="currentColor" />
+
+      {/* Stepped platform — 3 tiers */}
+      <rect x="8" y="176" width="204" height="12" rx="1" strokeWidth="1.5" stroke="currentColor" />
+      <rect x="22" y="163" width="176" height="15" rx="1" strokeWidth="1.5" stroke="currentColor" />
+      <rect x="38" y="152" width="144" height="13" rx="1" strokeWidth="1.5" stroke="currentColor" />
+
+      {/* OUTER PETAL SHELL — the defining lotus form */}
+      {/* Overall outer envelope: sweeps wide at base, curves dramatically inward at top */}
+      {/* Left outer edge */}
+      <path d="M38 152 C14 130 8 96 20 60 C30 76 38 66 50 60 C44 96 40 128 38 152Z"
+            strokeWidth="1.5" stroke="currentColor" />
+      {/* Second petal from left */}
+      <path d="M60 152 C40 128 36 92 48 58 C58 74 68 66 80 60 C76 94 68 128 60 152Z"
+            strokeWidth="1.5" stroke="currentColor" />
+      {/* Centre-left petal */}
+      <path d="M84 152 C68 128 66 90 76 56 C86 74 100 66 114 56 C124 90 152 128 136 152Z"
+            strokeWidth="1.5" stroke="currentColor" />
+      {/* Centre-right petal */}
+      <path d="M136 152 C152 128 156 92 144 58 C134 74 122 66 110 60 C106 94 124 128 136 152Z"
+            strokeWidth="1.5" stroke="currentColor" />
+      {/* Second petal from right */}
+      <path d="M160 152 C180 128 184 92 172 58 C162 74 152 66 140 60 C144 94 152 128 160 152Z"
+            strokeWidth="1.5" stroke="currentColor" />
+      {/* Right outer edge */}
+      <path d="M182 152 C206 130 212 96 200 60 C190 76 182 66 170 60 C176 96 180 128 182 152Z"
+            strokeWidth="1.5" stroke="currentColor" />
+
+      {/* MIDDLE PETAL LAYER — partially visible between outer petals */}
+      <path d="M50 148 C36 122 34 88 46 58" strokeWidth="1.2" stroke="currentColor" />
+      <path d="M76 148 C62 120 58 84 70 54" strokeWidth="1.2" stroke="currentColor" />
+      <path d="M110 148 C104 120 104 84 110 52" strokeWidth="1.2" stroke="currentColor" />
+      <path d="M144 148 C158 120 162 84 150 54" strokeWidth="1.2" stroke="currentColor" />
+      <path d="M170 148 C184 122 186 88 174 58" strokeWidth="1.2" stroke="currentColor" />
+
+      {/* CROWN — where all petals converge at the top */}
+      <path d="M20 60 C30 34 50 22 110 18 C170 22 190 34 200 60"
+            strokeWidth="1.5" stroke="currentColor" />
+      <ellipse cx="110" cy="16" rx="28" ry="10" strokeWidth="1.4" stroke="currentColor" />
+      <ellipse cx="110" cy="12" rx="14" ry="6" strokeWidth="1.2" stroke="currentColor" />
+
+      {/* Nine entrance portals at base of shell */}
+      <path d="M52 152 L52 136 Q62 124 72 136 L72 152" strokeWidth="1.1" stroke="currentColor" />
+      <path d="M96 152 L96 136 Q110 122 124 136 L124 152" strokeWidth="1.1" stroke="currentColor" />
+      <path d="M148 152 L148 136 Q158 124 168 136 L168 152" strokeWidth="1.1" stroke="currentColor" />
     </svg>
   )
 }
 
-// Gateway of India — triumphal arch in Bombay Gothic
+// Gateway of India — Bombay Gothic arch with 2 flanking turrets
 function GatewayOfIndia({ className }) {
   return (
-    <svg viewBox="0 0 160 200" fill="none" className={className} aria-hidden="true">
+    <svg viewBox="0 0 180 210" fill="none" className={className} aria-hidden="true">
       {/* Base steps */}
-      <rect x="5" y="185" width="150" height="12" rx="1" strokeWidth="1.5" stroke="currentColor" />
-      <rect x="15" y="176" width="130" height="12" rx="1" strokeWidth="1.5" stroke="currentColor" />
-      {/* Main base wall */}
-      <rect x="20" y="100" width="120" height="78" rx="1" strokeWidth="1.5" stroke="currentColor" />
-      {/* Central arch */}
-      <path d="M52 178 L52 128 Q80 96 108 128 L108 178" strokeWidth="1.5" stroke="currentColor" />
-      {/* Side turrets */}
-      <rect x="20" y="60" width="34" height="42" rx="1" strokeWidth="1.5" stroke="currentColor" />
-      <rect x="106" y="60" width="34" height="42" rx="1" strokeWidth="1.5" stroke="currentColor" />
-      {/* Turret tops — Mughal-inspired domes */}
-      <path d="M20 60 Q37 40 54 60" strokeWidth="1.5" stroke="currentColor" />
-      <ellipse cx="37" cy="38" rx="10" ry="5" strokeWidth="1.5" stroke="currentColor" />
-      <line x1="37" y1="33" x2="37" y2="24" strokeWidth="1.5" stroke="currentColor" />
-      <circle cx="37" cy="22" r="3" strokeWidth="1.5" stroke="currentColor" />
-      <path d="M106 60 Q123 40 140 60" strokeWidth="1.5" stroke="currentColor" />
-      <ellipse cx="123" cy="38" rx="10" ry="5" strokeWidth="1.5" stroke="currentColor" />
-      <line x1="123" y1="33" x2="123" y2="24" strokeWidth="1.5" stroke="currentColor" />
-      <circle cx="123" cy="22" r="3" strokeWidth="1.5" stroke="currentColor" />
-      {/* Top entablature between turrets */}
-      <rect x="54" y="56" width="52" height="16" rx="1" strokeWidth="1.5" stroke="currentColor" />
-      {/* Top centre dome */}
-      <path d="M64 56 Q80 34 96 56" strokeWidth="1.5" stroke="currentColor" />
-      <ellipse cx="80" cy="30" rx="12" ry="6" strokeWidth="1.5" stroke="currentColor" />
-      <line x1="80" y1="24" x2="80" y2="14" strokeWidth="1.5" stroke="currentColor" />
-      <circle cx="80" cy="12" r="3" strokeWidth="1.5" stroke="currentColor" />
-      {/* Side door arches */}
-      <path d="M24 178 L24 148 Q37 136 50 148 L50 178" strokeWidth="1.2" stroke="currentColor" />
-      <path d="M110 178 L110 148 Q123 136 136 148 L136 178" strokeWidth="1.2" stroke="currentColor" />
-      {/* Decorative lattice band */}
-      <line x1="20" y1="118" x2="140" y2="118" strokeWidth="1" stroke="currentColor" />
-      <line x1="20" y1="112" x2="140" y2="112" strokeWidth="0.8" stroke="currentColor" />
+      <rect x="5" y="200" width="170" height="8" rx="1" strokeWidth="1.5" stroke="currentColor" />
+      <rect x="12" y="190" width="156" height="12" rx="1" strokeWidth="1.5" stroke="currentColor" />
+
+      {/* Wide base wall — full width, including flanking wings */}
+      <rect x="14" y="108" width="152" height="84" rx="1" strokeWidth="1.5" stroke="currentColor" />
+
+      {/* Central pointed arch (the main feature) */}
+      <path d="M56 192 L56 148 Q90 108 124 148 L124 192" strokeWidth="1.5" stroke="currentColor" />
+
+      {/* Top entablature band spanning the full width */}
+      <rect x="12" y="92" width="156" height="18" rx="1" strokeWidth="1.5" stroke="currentColor" />
+
+      {/* TWO TURRETS — above either side of the central arch, no central dome */}
+      {/* Left turret, rising above the entablature beside the arch */}
+      <rect x="32" y="42" width="32" height="52" rx="1" strokeWidth="1.5" stroke="currentColor" />
+      <path d="M32 42 Q48 20 64 42" strokeWidth="1.5" stroke="currentColor" />
+      <ellipse cx="48" cy="17" rx="12" ry="6" strokeWidth="1.5" stroke="currentColor" />
+      <line x1="48" y1="11" x2="48" y2="2" strokeWidth="1.5" stroke="currentColor" />
+      <circle cx="48" cy="0" r="2.5" strokeWidth="1.5" stroke="currentColor" />
+
+      {/* Right turret */}
+      <rect x="116" y="42" width="32" height="52" rx="1" strokeWidth="1.5" stroke="currentColor" />
+      <path d="M116 42 Q132 20 148 42" strokeWidth="1.5" stroke="currentColor" />
+      <ellipse cx="132" cy="17" rx="12" ry="6" strokeWidth="1.5" stroke="currentColor" />
+      <line x1="132" y1="11" x2="132" y2="2" strokeWidth="1.5" stroke="currentColor" />
+      <circle cx="132" cy="0" r="2.5" strokeWidth="1.5" stroke="currentColor" />
+
+      {/* Side arched doorways in the flanking wings */}
+      <path d="M18 192 L18 160 Q34 142 50 160 L50 192" strokeWidth="1.2" stroke="currentColor" />
+      <path d="M130 192 L130 160 Q146 142 162 160 L162 192" strokeWidth="1.2" stroke="currentColor" />
+
+      {/* Decorative horizontal bands on wings */}
+      <line x1="14" y1="138" x2="56" y2="138" strokeWidth="1" stroke="currentColor" />
+      <line x1="124" y1="138" x2="166" y2="138" strokeWidth="1" stroke="currentColor" />
+    </svg>
+  )
+}
+
+// Charminar — four-minaret mosque in Hyderabad; front view shows 2 prominent minarets
+function Charminar({ className }) {
+  return (
+    <svg viewBox="0 0 180 290" fill="none" className={className} aria-hidden="true">
+      {/* Base */}
+      <rect x="8" y="278" width="164" height="10" rx="1" strokeWidth="1.5" stroke="currentColor" />
+
+      {/* LEFT FRONT MINARET — slender, full height from ground */}
+      <rect x="16" y="62" width="22" height="218" rx="2" strokeWidth="1.5" stroke="currentColor" />
+      {/* Circular balcony rings at 3 levels */}
+      <rect x="10" y="152" width="34" height="7" rx="3" strokeWidth="1.4" stroke="currentColor" />
+      <rect x="10" y="196" width="34" height="7" rx="3" strokeWidth="1.4" stroke="currentColor" />
+      <rect x="10" y="240" width="34" height="7" rx="3" strokeWidth="1.4" stroke="currentColor" />
+      {/* Left minaret neck ring */}
+      <ellipse cx="27" cy="60" rx="13" ry="5" strokeWidth="1.4" stroke="currentColor" />
+      {/* Left minaret dome */}
+      <path d="M14 60 Q27 38 40 60" strokeWidth="1.5" stroke="currentColor" />
+      <ellipse cx="27" cy="34" rx="10" ry="5" strokeWidth="1.4" stroke="currentColor" />
+      <line x1="27" y1="29" x2="27" y2="18" strokeWidth="1.5" stroke="currentColor" />
+      <circle cx="27" cy="16" r="3" strokeWidth="1.4" stroke="currentColor" />
+
+      {/* RIGHT FRONT MINARET */}
+      <rect x="142" y="62" width="22" height="218" rx="2" strokeWidth="1.5" stroke="currentColor" />
+      <rect x="136" y="152" width="34" height="7" rx="3" strokeWidth="1.4" stroke="currentColor" />
+      <rect x="136" y="196" width="34" height="7" rx="3" strokeWidth="1.4" stroke="currentColor" />
+      <rect x="136" y="240" width="34" height="7" rx="3" strokeWidth="1.4" stroke="currentColor" />
+      <ellipse cx="153" cy="60" rx="13" ry="5" strokeWidth="1.4" stroke="currentColor" />
+      <path d="M140 60 Q153 38 166 60" strokeWidth="1.5" stroke="currentColor" />
+      <ellipse cx="153" cy="34" rx="10" ry="5" strokeWidth="1.4" stroke="currentColor" />
+      <line x1="153" y1="29" x2="153" y2="18" strokeWidth="1.5" stroke="currentColor" />
+      <circle cx="153" cy="16" r="3" strokeWidth="1.4" stroke="currentColor" />
+
+      {/* MAIN BODY — square structure between and connecting the minarets */}
+      {/* Ground level with large pointed central arch */}
+      <rect x="36" y="196" width="108" height="84" rx="1" strokeWidth="1.5" stroke="currentColor" />
+      <path d="M62 278 L62 238 Q90 200 118 238 L118 278" strokeWidth="1.5" stroke="currentColor" />
+      {/* Side smaller arches at ground level */}
+      <path d="M38 278 L38 252 Q52 234 66 252 L66 278" strokeWidth="1.2" stroke="currentColor" />
+      <path d="M114 278 L114 252 Q128 234 142 252 L142 278" strokeWidth="1.2" stroke="currentColor" />
+
+      {/* Second floor with arched windows */}
+      <rect x="38" y="162" width="104" height="36" rx="1" strokeWidth="1.5" stroke="currentColor" />
+      <path d="M54 198 L54 178 Q68 162 82 178 L82 198" strokeWidth="1.2" stroke="currentColor" />
+      <path d="M98 198 L98 178 Q112 162 126 178 L126 198" strokeWidth="1.2" stroke="currentColor" />
+
+      {/* Third floor / clock parapet */}
+      <rect x="42" y="136" width="96" height="28" rx="1" strokeWidth="1.5" stroke="currentColor" />
+      <line x1="42" y1="150" x2="138" y2="150" strokeWidth="1" stroke="currentColor" />
+
+      {/* Top mosque level with small domes */}
+      <rect x="48" y="110" width="84" height="28" rx="1" strokeWidth="1.5" stroke="currentColor" />
+      <path d="M56 110 Q70 92 84 110" strokeWidth="1.2" stroke="currentColor" />
+      <path d="M96 110 Q110 92 124 110" strokeWidth="1.2" stroke="currentColor" />
     </svg>
   )
 }
@@ -201,14 +290,14 @@ export default function LandmarkBackground() {
       <div className={`absolute left-0 top-0 h-full flex flex-col items-start justify-around pl-2 w-48 ${strokeColour}`}>
         <TajMahal className="w-40 opacity-100" />
         <QutubMinar className="w-16 ml-8 opacity-100" />
-        <LotusTemple className="w-40 opacity-100" />
+        <LotusTemple className="w-44 opacity-100" />
       </div>
 
       {/* RIGHT SIDE — stacked landmarks */}
       <div className={`absolute right-0 top-0 h-full flex flex-col items-end justify-around pr-2 w-48 ${strokeColour}`}>
         <IndiaGate className="w-32 opacity-100" />
         <GatewayOfIndia className="w-40 opacity-100" />
-        <QutubMinar className="w-16 mr-8 opacity-100 scale-x-[-1]" />
+        <Charminar className="w-36 opacity-100" />
       </div>
     </div>
   )
