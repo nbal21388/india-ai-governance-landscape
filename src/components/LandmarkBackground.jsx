@@ -119,55 +119,56 @@ function QutubMinar({ className }) {
   )
 }
 
-// Lotus Temple — petal spike silhouette: 3 small low + 4 tall inward + 1 center tall
+// Lotus Temple — 3 small base spikes + 4 outer inward spikes + 4 tall central spikes
 function LotusTemple({ className }) {
   return (
     <svg viewBox="0 0 220 208" fill="none" className={className} aria-hidden="true">
-      {/* Reflecting pools — left and right of the platform */}
-      <rect x="4" y="196" width="62" height="10" rx="5" strokeWidth="1.2" stroke="currentColor" />
-      <rect x="154" y="196" width="62" height="10" rx="5" strokeWidth="1.2" stroke="currentColor" />
+      {/* 2-tier split platform (gap at center where building sits) */}
+      <rect x="25" y="163" width="78" height="9" rx="1" strokeWidth="1.5" stroke="currentColor" />
+      <rect x="117" y="163" width="78" height="9" rx="1" strokeWidth="1.5" stroke="currentColor" />
+      <rect x="10" y="176" width="83" height="9" rx="1" strokeWidth="1.5" stroke="currentColor" />
+      <rect x="125" y="176" width="83" height="9" rx="1" strokeWidth="1.5" stroke="currentColor" />
 
-      {/* Stepped base platform — 3 tiers */}
-      <rect x="8" y="186" width="204" height="12" rx="1" strokeWidth="1.5" stroke="currentColor" />
-      <rect x="20" y="173" width="180" height="15" rx="1" strokeWidth="1.5" stroke="currentColor" />
-      <rect x="34" y="161" width="152" height="14" rx="1" strokeWidth="1.5" stroke="currentColor" />
-
-      {/* 4 TALL INWARD-LEANING SPIKES — 2 on each side, tips angled toward center */}
-      {/* Far-left: base x=34-58, tip leans in to (68, 80) */}
-      <path d="M34 161 C34 134 46 108 68 80 C64 108 56 134 58 161"
+      {/* 4 OUTER INWARD-LEANING SPIKES — x=34–186 (slightly less wide; still wider than small spikes x=40–180) */}
+      {/* Each spike 38 units wide, touching at x=72, x=110, x=148. Tips at y=97, symmetric around x=110 */}
+      {/* Far-left: x=34–72, tip (64, 97) */}
+      <path d="M34 161 C34 130 46 108 64 97 C62 110 60 136 72 161"
             strokeWidth="1.5" stroke="currentColor" />
-      {/* Near-left: base x=65-88, tip leans in to (93, 66) */}
-      <path d="M65 161 C65 126 75 98 93 66 C93 98 87 128 88 161"
+      {/* Near-left: x=72–110, tip (101, 97) */}
+      <path d="M72 161 C72 126 84 102 101 97 C101 102 108 128 110 161"
             strokeWidth="1.5" stroke="currentColor" />
-      {/* Near-right: base x=132-155, tip leans in to (127, 66) */}
-      <path d="M132 161 C133 128 127 98 127 66 C145 98 155 126 155 161"
+      {/* Near-right: x=110–148, tip (119, 97) — mirror of near-left */}
+      <path d="M110 161 C110 128 112 102 119 97 C136 102 148 126 148 161"
             strokeWidth="1.5" stroke="currentColor" />
-      {/* Far-right: base x=162-186, tip leans in to (152, 80) */}
-      <path d="M162 161 C162 134 158 108 152 80 C174 108 186 134 186 161"
+      {/* Far-right: x=148–186, tip (156, 97) — mirror of far-left */}
+      <path d="M148 161 C160 136 158 110 156 97 C174 108 186 130 186 161"
             strokeWidth="1.5" stroke="currentColor" />
 
-      {/* Subtle crown arc connecting the near-spike tips */}
-      <path d="M93 66 Q110 50 127 66" strokeWidth="1.2" stroke="currentColor" />
+      {/* 4 CENTRAL SPIKES — span x=59–161 (2/3 into far-left spike → 1/3 into far-right spike) */}
+      {/* Each spike ~25 units wide, touching at x=85, x=110, x=135. Tips clustered at y=64, near x=110 */}
+      {/* Spike 1: x=59–85, tip (104, 64) — leans strongly right toward center */}
+      <path d="M59 161 C59 118 82 86 104 64 C104 88 92 130 85 161"
+            strokeWidth="1.5" stroke="currentColor" />
+      {/* Spike 2: x=85–110, tip (108, 64) — leans slightly right */}
+      <path d="M85 161 C85 122 98 90 108 64 C108 90 110 126 110 161"
+            strokeWidth="1.5" stroke="currentColor" />
+      {/* Spike 3: x=110–135, tip (112, 64) — mirror of spike 2 */}
+      <path d="M110 161 C110 126 112 90 112 64 C122 90 135 122 135 161"
+            strokeWidth="1.5" stroke="currentColor" />
+      {/* Spike 4: x=135–161, tip (116, 64) — mirror of spike 1 */}
+      <path d="M135 161 C128 130 116 88 116 64 C138 86 161 118 161 161"
+            strokeWidth="1.5" stroke="currentColor" />
 
-      {/* 3 SMALL SPIKES low at the bottom — tight center cluster */}
+      {/* 3 SMALL SPIKES low at the bottom */}
       {/* Left small */}
-      <path d="M87 161 C87 152 91 143 95 136 C99 143 103 152 103 161"
+      <path d="M40 161 C42 152 44 143 47 136 C60 140 70 152 75 161"
             strokeWidth="1.4" stroke="currentColor" />
-      {/* Center small */}
-      <path d="M101 161 C101 150 106 140 110 132 C114 140 119 150 119 161"
+      {/* Center small — symmetric */}
+      <path d="M85 161 C87 152 100 140 110 134 C120 140 133 152 135 161"
             strokeWidth="1.4" stroke="currentColor" />
-      {/* Right small */}
-      <path d="M117 161 C117 152 121 143 125 136 C129 143 133 152 133 161"
+      {/* Right small — mirror of left */}
+      <path d="M180 161 C178 152 176 143 173 136 C160 140 150 152 145 161"
             strokeWidth="1.4" stroke="currentColor" />
-
-      {/* CENTER BIG SPIKE — tallest, innermost petal, rises through the small cluster */}
-      <path d="M103 161 C103 126 107 88 110 44 C113 88 117 126 117 161"
-            strokeWidth="1.6" stroke="currentColor" />
-
-      {/* Crown finial */}
-      <ellipse cx="110" cy="40" rx="11" ry="5" strokeWidth="1.4" stroke="currentColor" />
-      <line x1="110" y1="35" x2="110" y2="24" strokeWidth="1.4" stroke="currentColor" />
-      <circle cx="110" cy="22" r="3" strokeWidth="1.3" stroke="currentColor" />
     </svg>
   )
 }
