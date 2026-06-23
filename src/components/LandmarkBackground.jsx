@@ -56,7 +56,7 @@ function IndiaGate({ className }) {
       <rect x="8" y="97" width="45" height="108" rx="1" strokeWidth="1.5" stroke="currentColor" />
       {/* Right pillar — widened (inner edge x=86, outer edge x=126) */}
       <rect x="86" y="97" width="45" height="108" rx="1" strokeWidth="1.5" stroke="currentColor" />
-      {/* Tall rectangles inside pillars*/}
+      {/* Tall rectangles inside pillars */}
       <rect x="18" y="125" width="25" height="80" rx="1" strokeWidth="1.5" stroke="currentColor" />
       <rect x="96" y="125" width="25" height="80" rx="1" strokeWidth="1.5" stroke="currentColor" />
       {/* Small circle in the left pillar */}
@@ -188,40 +188,49 @@ function GatewayOfIndia({ className }) {
   return (
     <svg viewBox="0 0 180 210" fill="none" className={className} aria-hidden="true">
       {/* Base steps */}
-      <rect x="5" y="200" width="170" height="8" rx="1" strokeWidth="1.5" stroke="currentColor" />
-      <rect x="12" y="190" width="156" height="12" rx="1" strokeWidth="1.5" stroke="currentColor" />
+      <rect x="5" y="200" width="173" height="8" rx="1" strokeWidth="1.5" stroke="currentColor" />
 
       {/* Wide base wall — full width, including flanking wings */}
-      <rect x="14" y="108" width="152" height="84" rx="1" strokeWidth="1.5" stroke="currentColor" />
+      <rect x="11" y="114" width="162" height="85" rx="1" strokeWidth="1.5" stroke="currentColor" />
 
       {/* Central pointed arch (the main feature) */}
-      <path d="M56 192 L56 148 Q90 108 124 148 L124 192" strokeWidth="1.5" stroke="currentColor" />
+      <path d="M69 200 L69 150 Q93 100 116 150 L116 200" strokeWidth="1.5" stroke="currentColor" />
 
       {/* Top entablature band spanning the full width */}
-      <rect x="12" y="92" width="156" height="18" rx="1" strokeWidth="1.5" stroke="currentColor" />
+      <rect x="12" y="92" width="158" height="15" rx="1" strokeWidth="1.5" stroke="currentColor" />
+
+      {/* Thin rectangle */}
+      <rect x="8" y="108" width="168" height="5" rx="1" strokeWidth="1.5" stroke="currentColor" />
+
+      {/* Highest rectangles */}
+      <rect x="65" y="67" width="55" height="25" rx="1" strokeWidth="1.5" stroke="currentColor" />
+      <rect x="65" y="60" width="55" height="7" rx="1" strokeWidth="1.5" stroke="currentColor" />
 
       {/* TWO TURRETS — above either side of the central arch, no central dome */}
-      {/* Left turret, rising above the entablature beside the arch */}
-      <rect x="32" y="42" width="32" height="52" rx="1" strokeWidth="1.5" stroke="currentColor" />
-      <path d="M32 42 Q48 20 64 42" strokeWidth="1.5" stroke="currentColor" />
-      <ellipse cx="48" cy="17" rx="12" ry="6" strokeWidth="1.5" stroke="currentColor" />
-      <line x1="48" y1="11" x2="48" y2="2" strokeWidth="1.5" stroke="currentColor" />
-      <circle cx="48" cy="0" r="2.5" strokeWidth="1.5" stroke="currentColor" />
+      {/* Left turret */}
+      <rect x="50" y="49" width="15" height="150" rx="1" strokeWidth="1.5" stroke="currentColor" />
+      <path d="M50 50 Q57 30 65 50" strokeWidth="1.5" stroke="currentColor" />
+      <ellipse cx="57" cy="36" rx="3" ry="3" strokeWidth="1.5" stroke="currentColor" />
+      <line x1="57" y1="33" x2="57" y2="28" strokeWidth="1.5" stroke="currentColor" />
 
       {/* Right turret */}
-      <rect x="116" y="42" width="32" height="52" rx="1" strokeWidth="1.5" stroke="currentColor" />
-      <path d="M116 42 Q132 20 148 42" strokeWidth="1.5" stroke="currentColor" />
-      <ellipse cx="132" cy="17" rx="12" ry="6" strokeWidth="1.5" stroke="currentColor" />
-      <line x1="132" y1="11" x2="132" y2="2" strokeWidth="1.5" stroke="currentColor" />
-      <circle cx="132" cy="0" r="2.5" strokeWidth="1.5" stroke="currentColor" />
+      <rect x="120" y="49" width="15" height="150" rx="1" strokeWidth="1.5" stroke="currentColor" />
+      <path d="M120 50 Q126 30 135 50" strokeWidth="1.5" stroke="currentColor" />
+      <ellipse cx="127" cy="36" rx="3" ry="3" strokeWidth="1.5" stroke="currentColor" />
+      <line x1="127" y1="33" x2="127" y2="28" strokeWidth="1.5" stroke="currentColor" />
+
+      {/* Roof pole */}
+      <rect x="91" y="10" width="2" height="50" rx="1" strokeWidth="1.5" stroke="currentColor" />
 
       {/* Side arched doorways in the flanking wings */}
-      <path d="M18 192 L18 160 Q34 142 50 160 L50 192" strokeWidth="1.2" stroke="currentColor" />
-      <path d="M130 192 L130 160 Q146 142 162 160 L162 192" strokeWidth="1.2" stroke="currentColor" />
+      <path d="M25 200 L25 145 Q34 125 45 145 L45 200" strokeWidth="1.2" stroke="currentColor" />
+      <path d="M140 200 L140 145 Q150 125 160 145 L160 200" strokeWidth="1.2" stroke="currentColor" />
+      <path d="M29 200 L29 185 Q34 165 41 185 L41 200" strokeWidth="1.2" stroke="currentColor" />
+      <path d="M144 200 L144 185 Q149 165 156 185 L156 200" strokeWidth="1.2" stroke="currentColor" />
 
       {/* Decorative horizontal bands on wings */}
-      <line x1="14" y1="138" x2="56" y2="138" strokeWidth="1" stroke="currentColor" />
-      <line x1="124" y1="138" x2="166" y2="138" strokeWidth="1" stroke="currentColor" />
+      <line x1="10" y1="128" x2="50" y2="128" strokeWidth="1" stroke="currentColor" />
+      <line x1="135" y1="128" x2="172" y2="128" strokeWidth="1" stroke="currentColor" />
     </svg>
   )
 }
