@@ -114,40 +114,61 @@ function IndiaGate({ className }) {
   )
 }
 
-// Qutub Minar — tapering tower with bands
+// Qutub Minar
 function QutubMinar({ className }) {
   return (
     <svg viewBox="0 0 80 300" fill="none" className={className} aria-hidden="true">
-      {/* Base */}
-      <rect x="6" y="284" width="68" height="12" rx="1" strokeWidth="1.5" stroke="currentColor" />
-      {/* Bottom section — widest */}
-      <path d="M12 284 L12 230 Q14 226 40 226 Q66 226 68 230 L68 284" strokeWidth="1.5" stroke="currentColor" />
+
+      {/* Base platform */}
+      <rect x="4" y="284" width="72" height="12" rx="1" strokeWidth="1.5" stroke="currentColor" />
+
+      {/* Section 1 — widest (splayed sides for taper) */}
+      <path d="M8 284 L11 230 Q13 226 40 226 Q67 226 69 230 L72 284" strokeWidth="1.4" stroke="currentColor" />
       {/* Band 1 */}
-      <rect x="10" y="224" width="60" height="8" rx="1" strokeWidth="1.5" stroke="currentColor" />
+      <rect x="9" y="222" width="62" height="8" rx="1" strokeWidth="1.4" stroke="currentColor" />
+      {/* Flutes section 1 */}
+      <line x1="22" y1="230" x2="20" y2="284" strokeWidth="0.7" stroke="currentColor" />
+      <line x1="40" y1="230" x2="40" y2="284" strokeWidth="0.7" stroke="currentColor" />
+      <line x1="58" y1="230" x2="60" y2="284" strokeWidth="0.7" stroke="currentColor" />
+
       {/* Section 2 */}
-      <path d="M17 224 L17 178 Q19 174 40 174 Q61 174 63 178 L63 224" strokeWidth="1.5" stroke="currentColor" />
+      <path d="M16 222 L19 178 Q21 174 40 174 Q59 174 61 178 L64 222" strokeWidth="1.4" stroke="currentColor" />
       {/* Band 2 */}
-      <rect x="14" y="172" width="52" height="8" rx="1" strokeWidth="1.5" stroke="currentColor" />
+      <rect x="17" y="170" width="46" height="8" rx="1" strokeWidth="1.4" stroke="currentColor" />
+      {/* Flutes section 2 */}
+      <line x1="28" y1="178" x2="26" y2="222" strokeWidth="0.7" stroke="currentColor" />
+      <line x1="40" y1="178" x2="40" y2="222" strokeWidth="0.7" stroke="currentColor" />
+      <line x1="52" y1="178" x2="54" y2="222" strokeWidth="0.7" stroke="currentColor" />
+
       {/* Section 3 */}
-      <path d="M20 172 L20 130 Q22 126 40 126 Q58 126 60 130 L60 172" strokeWidth="1.5" stroke="currentColor" />
+      <path d="M22 170 L25 130 Q27 126 40 126 Q53 126 55 130 L58 170" strokeWidth="1.4" stroke="currentColor" />
       {/* Band 3 */}
-      <rect x="18" y="124" width="44" height="8" rx="1" strokeWidth="1.5" stroke="currentColor" />
+      <rect x="23" y="122" width="34" height="8" rx="1" strokeWidth="1.4" stroke="currentColor" />
+      {/* Flutes section 3 */}
+      <line x1="32" y1="128" x2="30" y2="170" strokeWidth="0.7" stroke="currentColor" />
+      <line x1="40" y1="128" x2="40" y2="170" strokeWidth="0.7" stroke="currentColor" />
+      <line x1="48" y1="128" x2="50" y2="170" strokeWidth="0.7" stroke="currentColor" />
+
       {/* Section 4 */}
-      <path d="M24 124 L24 88 Q26 84 40 84 Q54 84 56 88 L56 124" strokeWidth="1.5" stroke="currentColor" />
+      <path d="M27 122 L29 88 Q31 84 40 84 Q49 84 51 88 L53 122" strokeWidth="1.4" stroke="currentColor" />
       {/* Band 4 */}
-      <rect x="22" y="82" width="36" height="8" rx="1" strokeWidth="1.5" stroke="currentColor" />
-      {/* Top section — narrowest */}
-      <path d="M28 82 L28 48 Q30 44 40 44 Q50 44 52 48 L52 82" strokeWidth="1.5" stroke="currentColor" />
-      {/* Finial base */}
-      <ellipse cx="40" cy="44" rx="14" ry="5" strokeWidth="1.5" stroke="currentColor" />
-      {/* Top cupola */}
-      <path d="M30 44 Q40 24 50 44" strokeWidth="1.5" stroke="currentColor" />
-      <line x1="40" y1="24" x2="40" y2="12" strokeWidth="1.5" stroke="currentColor" />
-      <circle cx="40" cy="10" r="3" strokeWidth="1.5" stroke="currentColor" />
-      {/* Decorative vertical fluting lines on sections */}
-      <line x1="26" y1="232" x2="26" y2="284" strokeWidth="0.8" stroke="currentColor" />
-      <line x1="40" y1="232" x2="40" y2="284" strokeWidth="0.8" stroke="currentColor" />
-      <line x1="54" y1="232" x2="54" y2="284" strokeWidth="0.8" stroke="currentColor" />
+      <rect x="28" y="80" width="24" height="8" rx="1" strokeWidth="1.4" stroke="currentColor" />
+      {/* Band 5 */}
+      <rect x="31" y="62" width="18" height="5" rx="1" strokeWidth="1.4" stroke="currentColor" />
+
+      {/* Section 5 — narrowest shaft */}
+      <path d="M31 80 L33 52 Q35 48 40 48 Q45 48 47 52 L49 80" strokeWidth="1.4" stroke="currentColor" />
+
+      {/* Finial base ring */}
+      <ellipse cx="40" cy="48" rx="10" ry="4" strokeWidth="1.3" stroke="currentColor" />
+
+      {/* Cupola dome */}
+      <path d="M30 48 Q40 30 50 48" strokeWidth="1.3" stroke="currentColor" />
+
+      {/* Finial spike — starts at dome apex (40,30), touching the design */}
+      <line x1="40" y1="40" x2="40" y2="30" strokeWidth="1.3" stroke="currentColor" />
+      {/* <circle cx="40" cy="12" r="3" strokeWidth="1.3" stroke="currentColor" /> */}
+
     </svg>
   )
 }
