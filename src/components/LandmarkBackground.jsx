@@ -51,32 +51,42 @@ function TajMahal({ className }) {
 // India Gate — memorial arch
 function IndiaGate({ className }) {
   return (
-    <svg viewBox="0 0 140 220" fill="none" className={className} aria-hidden="true">
-      {/* Base platform */}
-      <rect x="10" y="204" width="120" height="12" rx="1" strokeWidth="1.5" stroke="currentColor" />
-      <rect x="25" y="196" width="90" height="10" rx="1" strokeWidth="1.5" stroke="currentColor" />
-      {/* Left pillar */}
-      <rect x="22" y="90" width="32" height="108" rx="1" strokeWidth="1.5" stroke="currentColor" />
-      {/* Right pillar */}
-      <rect x="86" y="90" width="32" height="108" rx="1" strokeWidth="1.5" stroke="currentColor" />
+    <svg viewBox="0 -20 150 240" fill="none" className={className} aria-hidden="true">
+      {/* Left pillar — widened (outer edge x=14, inner edge x=54) */}
+      <rect x="8" y="97" width="45" height="108" rx="1" strokeWidth="1.5" stroke="currentColor" />
+      {/* Right pillar — widened (inner edge x=86, outer edge x=126) */}
+      <rect x="86" y="97" width="45" height="108" rx="1" strokeWidth="1.5" stroke="currentColor" />
+      {/* Tall rectangles inside pillars*/}
+      <rect x="18" y="125" width="25" height="80" rx="1" strokeWidth="1.5" stroke="currentColor" />
+      <rect x="96" y="125" width="25" height="80" rx="1" strokeWidth="1.5" stroke="currentColor" />
+      {/* Small circle in the left pillar */}
+      <circle cx="30" cy="113" r="6" strokeWidth="1.2" stroke="currentColor" />
+      {/* Small circle in the right pillar */}
+      <circle cx="108" cy="113" r="6" strokeWidth="1.2" stroke="currentColor" />
       {/* Top entablature */}
-      <rect x="16" y="72" width="108" height="20" rx="1" strokeWidth="1.5" stroke="currentColor" />
+      <rect x="8" y="72" width="123" height="20" rx="1" strokeWidth="1.5" stroke="currentColor" />
+      {/* Thin rectangle */}
+      <rect x="2" y="92" width="134" height="5" rx="1" strokeWidth="1.5" stroke="currentColor" />
       {/* Arch */}
-      <path d="M54 192 L54 120 Q70 92 86 120 L86 192" strokeWidth="1.5" stroke="currentColor" />
-      {/* Arch keystone */}
-      <ellipse cx="70" cy="88" rx="14" ry="8" strokeWidth="1.5" stroke="currentColor" />
-      {/* Attic / top section */}
-      <rect x="30" y="48" width="80" height="26" rx="1" strokeWidth="1.5" stroke="currentColor" />
-      {/* Top dome cupola */}
-      <path d="M52 48 Q70 28 88 48" strokeWidth="1.5" stroke="currentColor" />
-      <ellipse cx="70" cy="24" rx="10" ry="6" strokeWidth="1.5" stroke="currentColor" />
-      <line x1="70" y1="18" x2="70" y2="8" strokeWidth="1.5" stroke="currentColor" />
-      <circle cx="70" cy="6" r="3" strokeWidth="1.5" stroke="currentColor" />
+      <path d="M54 205 L54 122 Q70 100 86 122 L86 205" strokeWidth="1.5" stroke="currentColor" />
+      {/* Attic / top section — wider */}
+      <rect x="24" y="45" width="92" height="26" rx="1" strokeWidth="1.5" stroke="currentColor" />
+      {/* Small rectangle in centre of attic, ~1/2 attic width (46 of 92) */}
+      <rect x="47" y="52" width="46" height="11" rx="1" strokeWidth="1.2" stroke="currentColor" />
+      {/* Tiny circles touching each side of the small rectangle */}
+      <circle cx="41" cy="58" r="5" strokeWidth="1.2" stroke="currentColor" />
+      <circle cx="99" cy="58" r="5" strokeWidth="1.2" stroke="currentColor" />
+      {/* Small rectangle */}
+      <rect x="40" y="40" width="60" height="5" rx="1" strokeWidth="1.5" stroke="currentColor" />
+      {/* Top dome cupola — wider */}
+      <path d="M60 40 Q70 30 80 40" strokeWidth="1.5" stroke="currentColor" />
       {/* Pillar detail lines */}
-      <line x1="22" y1="130" x2="54" y2="130" strokeWidth="1" stroke="currentColor" />
-      <line x1="22" y1="160" x2="54" y2="160" strokeWidth="1" stroke="currentColor" />
-      <line x1="86" y1="130" x2="118" y2="130" strokeWidth="1" stroke="currentColor" />
-      <line x1="86" y1="160" x2="118" y2="160" strokeWidth="1" stroke="currentColor" />
+      <line x1="9" y1="135" x2="54" y2="135" strokeWidth="1" stroke="currentColor" />
+      <line x1="9" y1="160" x2="54" y2="160" strokeWidth="1" stroke="currentColor" />
+      <line x1="9" y1="193" x2="54" y2="193" strokeWidth="1" stroke="currentColor" />
+      <line x1="86" y1="135" x2="130" y2="135" strokeWidth="1" stroke="currentColor" />
+      <line x1="86" y1="160" x2="130" y2="160" strokeWidth="1" stroke="currentColor" />
+      <line x1="86" y1="193" x2="130" y2="193" strokeWidth="1" stroke="currentColor" />
     </svg>
   )
 }
