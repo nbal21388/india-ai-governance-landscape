@@ -3,47 +3,70 @@ import { useTheme } from '../context/ThemeContext'
 // Taj Mahal silhouette — central dome, minarets, archway, platform
 function TajMahal({ className }) {
   return (
-    <svg viewBox="0 0 180 260" fill="none" className={className} aria-hidden="true">
-      {/* Platform / plinth */}
-      <rect x="10" y="230" width="160" height="14" rx="1" strokeWidth="1.5" stroke="currentColor" />
-      <rect x="20" y="222" width="140" height="10" rx="1" strokeWidth="1.5" stroke="currentColor" />
-      {/* Main building base */}
-      <rect x="30" y="170" width="120" height="54" rx="2" strokeWidth="1.5" stroke="currentColor" />
-      {/* Central iwan arch */}
-      <path d="M65 224 L65 188 Q90 164 115 188 L115 224" strokeWidth="1.5" stroke="currentColor" />
-      {/* Side smaller arches */}
-      <path d="M32 224 L32 200 Q44 188 56 200 L56 224" strokeWidth="1.5" stroke="currentColor" />
-      <path d="M124 224 L124 200 Q136 188 148 200 L148 224" strokeWidth="1.5" stroke="currentColor" />
-      {/* Octagonal drum */}
-      <path d="M55 170 L55 152 L125 152 L125 170" strokeWidth="1.5" stroke="currentColor" />
-      {/* Main dome */}
-      <path d="M55 152 Q55 100 90 90 Q125 100 125 152" strokeWidth="1.5" stroke="currentColor" />
-      {/* Finial */}
-      <line x1="90" y1="90" x2="90" y2="72" strokeWidth="1.5" stroke="currentColor" />
-      <circle cx="90" cy="70" r="3" strokeWidth="1.5" stroke="currentColor" />
-      <line x1="90" y1="67" x2="90" y2="58" strokeWidth="1.5" stroke="currentColor" />
-      {/* Left minaret */}
-      <rect x="14" y="120" width="22" height="100" rx="2" strokeWidth="1.5" stroke="currentColor" />
-      <path d="M14 120 Q25 104 36 120" strokeWidth="1.5" stroke="currentColor" />
-      <ellipse cx="25" cy="102" rx="8" ry="4" strokeWidth="1.5" stroke="currentColor" />
-      <line x1="25" y1="98" x2="25" y2="88" strokeWidth="1.5" stroke="currentColor" />
-      <circle cx="25" cy="86" r="2.5" strokeWidth="1.5" stroke="currentColor" />
-      {/* Right minaret */}
-      <rect x="144" y="120" width="22" height="100" rx="2" strokeWidth="1.5" stroke="currentColor" />
-      <path d="M144 120 Q155 104 166 120" strokeWidth="1.5" stroke="currentColor" />
-      <ellipse cx="155" cy="102" rx="8" ry="4" strokeWidth="1.5" stroke="currentColor" />
-      <line x1="155" y1="98" x2="155" y2="88" strokeWidth="1.5" stroke="currentColor" />
-      <circle cx="155" cy="86" r="2.5" strokeWidth="1.5" stroke="currentColor" />
-      {/* Minaret detail bands */}
-      <line x1="14" y1="155" x2="36" y2="155" strokeWidth="1" stroke="currentColor" />
-      <line x1="14" y1="185" x2="36" y2="185" strokeWidth="1" stroke="currentColor" />
-      <line x1="144" y1="155" x2="166" y2="155" strokeWidth="1" stroke="currentColor" />
-      <line x1="144" y1="185" x2="166" y2="185" strokeWidth="1" stroke="currentColor" />
-      {/* Secondary domed kiosks */}
-      <path d="M48 152 Q48 142 55 140 Q62 142 62 152" strokeWidth="1.2" stroke="currentColor" />
-      <line x1="55" y1="140" x2="55" y2="134" strokeWidth="1.2" stroke="currentColor" />
-      <path d="M118 152 Q118 142 125 140 Q132 142 132 152" strokeWidth="1.2" stroke="currentColor" />
-      <line x1="125" y1="140" x2="125" y2="134" strokeWidth="1.2" stroke="currentColor" />
+    <svg viewBox="0 0 180 280" fill="none" className={className} aria-hidden="true">
+
+      {/* === PLATFORM (two-tier plinth) === */}
+      <rect x="3"  y="242" width="175" height="10" rx="1" strokeWidth="1.2" stroke="currentColor" />
+      <rect x="3" y="232" width="175" height="12" rx="1" strokeWidth="1.2" stroke="currentColor" />
+
+      {/* === MAIN BUILDING BASE === */}
+      <rect x="48"  y="162" width="84" height="70" rx="1" strokeWidth="1.3" stroke="currentColor" />
+      <rect x="28"  y="174" width="20" height="58" rx="1" strokeWidth="1.2" stroke="currentColor" />
+      <rect x="132" y="174" width="20" height="58" rx="1" strokeWidth="1.2" stroke="currentColor" />
+
+      {/* === ARCHES === */}
+      {/* Central iwan — tall pointed arch */}
+      <path d="M67 232 L67 194 Q90 158 113 194 L113 232" strokeWidth="1.3" stroke="currentColor" />
+      {/* Side arches on wings */}
+      <path d="M30 232 L30 210 Q37 198 45 210 L45 232" strokeWidth="1.1" stroke="currentColor" />
+      <path d="M134 232 L134 210 Q143 198 150 210 L150 232" strokeWidth="1.1" stroke="currentColor" />
+
+      {/* === DRUM (base of dome) === */}
+      <path d="M56 162 L56 148 L124 148 L124 162" strokeWidth="1.2" stroke="currentColor" />
+      <line x1="56" y1="155" x2="124" y2="155" strokeWidth="0.8" stroke="currentColor" strokeDasharray="4 3" />
+
+      {/* === MAIN DOME (onion-shaped, bulbous) === */}
+      <path
+        d="M58 160 C52 140, 52 108, 90 88 C128 108, 128 140, 122 160"
+        strokeWidth="1.4" stroke="currentColor"
+      />
+
+      {/* === FINIAL (kalash) === */}
+      <circle cx="90" cy="85" r="2.2" strokeWidth="1.2" stroke="currentColor" />
+      <circle cx="90" cy="80" r="3"   strokeWidth="1.2" stroke="currentColor" />
+      <line  x1="90" y1="70" x2="90" y2="78" strokeWidth="1.2" stroke="currentColor" />
+      <circle cx="90" cy="70" r="1.4" strokeWidth="1.1" stroke="currentColor" />
+      <line  x1="90" y1="76" x2="90" y2="73" strokeWidth="1.1" stroke="currentColor" />
+
+      {/* === CHHATRIS (corner kiosks) === */}
+      <path d="M33 162 C29 154, 29 146, 39 143 C49 146, 49 154, 45 162" strokeWidth="1" stroke="currentColor" />
+      <line x1="39" y1="143" x2="39" y2="138" strokeWidth="1" stroke="currentColor" />
+      <circle cx="39" cy="137" r="1.2" strokeWidth="1" stroke="currentColor" />
+      <rect x="33"  y="162" width="12" height="12" rx="1" strokeWidth="1.2" stroke="currentColor" />
+
+      <path d="M135 162 C131 154, 131 146, 141 143 C151 146, 151 154, 147 162" strokeWidth="1" stroke="currentColor" />
+      <line x1="141" y1="143" x2="141" y2="138" strokeWidth="1" stroke="currentColor" />
+      <circle cx="141" cy="137" r="1.2" strokeWidth="1" stroke="currentColor" />
+      <rect x="135"  y="162" width="12" height="12" rx="1" strokeWidth="1.2" stroke="currentColor" />
+
+      {/* === LEFT MINARET (tapered trapezoid) === */}
+      <path d="M7 232 L10 116 L19 116 L22 232 Z" strokeWidth="1.2" stroke="currentColor" />
+      <line x1="7.5"  y1="196" x2="21.5" y2="196" strokeWidth="1" stroke="currentColor" />
+      <line x1="8.5"  y1="170" x2="20.5" y2="170" strokeWidth="1" stroke="currentColor" />
+      <line x1="9.5"  y1="144" x2="19.5" y2="144" strokeWidth="1" stroke="currentColor" />
+      <path d="M10 116 C8 108, 8 100, 14.5 96 C21 100, 21 108, 19 116" strokeWidth="1.1" stroke="currentColor" />
+      <line x1="14.5" y1="96" x2="14.5" y2="91" strokeWidth="1" stroke="currentColor" />
+      <circle cx="14.5" cy="90" r="1.5" strokeWidth="1" stroke="currentColor" />
+
+      {/* === RIGHT MINARET === */}
+      <path d="M158 232 L161 116 L170 116 L173 232 Z" strokeWidth="1.2" stroke="currentColor" />
+      <line x1="158.5" y1="196" x2="172.5" y2="196" strokeWidth="1" stroke="currentColor" />
+      <line x1="159.5" y1="170" x2="171.5" y2="170" strokeWidth="1" stroke="currentColor" />
+      <line x1="160.5" y1="144" x2="170.5" y2="144" strokeWidth="1" stroke="currentColor" />
+      <path d="M161 116 C159 108, 159 100, 165.5 96 C172 100, 172 108, 170 116" strokeWidth="1.1" stroke="currentColor" />
+      <line x1="165.5" y1="96" x2="165.5" y2="91" strokeWidth="1" stroke="currentColor" />
+      <circle cx="165.5" cy="90" r="1.5" strokeWidth="1" stroke="currentColor" />
+
     </svg>
   )
 }
