@@ -283,55 +283,116 @@ function GatewayOfIndia({ className }) {
 function Charminar({ className }) {
   return (
     <svg viewBox="0 0 180 290" fill="none" className={className} aria-hidden="true">
-      {/* Base */}
-      <rect x="8" y="278" width="164" height="10" rx="1" strokeWidth="1.5" stroke="currentColor" />
 
-      {/* LEFT FRONT MINARET — slender, full height from ground */}
-      <rect x="16" y="62" width="22" height="218" rx="2" strokeWidth="1.5" stroke="currentColor" />
-      {/* Circular balcony rings at 3 levels */}
-      <rect x="10" y="152" width="34" height="7" rx="3" strokeWidth="1.4" stroke="currentColor" />
-      <rect x="10" y="196" width="34" height="7" rx="3" strokeWidth="1.4" stroke="currentColor" />
-      <rect x="10" y="240" width="34" height="7" rx="3" strokeWidth="1.4" stroke="currentColor" />
-      {/* Left minaret neck ring */}
-      <ellipse cx="27" cy="60" rx="13" ry="5" strokeWidth="1.4" stroke="currentColor" />
-      {/* Left minaret dome */}
-      <path d="M14 60 Q27 38 40 60" strokeWidth="1.5" stroke="currentColor" />
-      <ellipse cx="27" cy="34" rx="10" ry="5" strokeWidth="1.4" stroke="currentColor" />
-      <line x1="27" y1="29" x2="27" y2="18" strokeWidth="1.5" stroke="currentColor" />
-      <circle cx="27" cy="16" r="3" strokeWidth="1.4" stroke="currentColor" />
+      {/* BASE PLATFORM */}
+      <rect x="6" y="278" width="168" height="10" rx="1" strokeWidth="1.4" stroke="currentColor" />
 
-      {/* RIGHT FRONT MINARET */}
-      <rect x="142" y="62" width="22" height="218" rx="2" strokeWidth="1.5" stroke="currentColor" />
-      <rect x="136" y="152" width="34" height="7" rx="3" strokeWidth="1.4" stroke="currentColor" />
-      <rect x="136" y="196" width="34" height="7" rx="3" strokeWidth="1.4" stroke="currentColor" />
-      <rect x="136" y="240" width="34" height="7" rx="3" strokeWidth="1.4" stroke="currentColor" />
-      <ellipse cx="153" cy="60" rx="13" ry="5" strokeWidth="1.4" stroke="currentColor" />
-      <path d="M140 60 Q153 38 166 60" strokeWidth="1.5" stroke="currentColor" />
-      <ellipse cx="153" cy="34" rx="10" ry="5" strokeWidth="1.4" stroke="currentColor" />
-      <line x1="153" y1="29" x2="153" y2="18" strokeWidth="1.5" stroke="currentColor" />
-      <circle cx="153" cy="16" r="3" strokeWidth="1.4" stroke="currentColor" />
+      {/* Layer 1: Ground floor */}
+      <rect x="38" y="200" width="104" height="78" rx="1" strokeWidth="1.4" stroke="currentColor" />
+      <path d="M58 278 L58 236 Q90 195 122 236 L122 278" strokeWidth="1.4" stroke="currentColor" />
+      <circle cx="90"  cy="207" r="2" strokeWidth="1.1" stroke="currentColor" />
+      <circle cx="63"  cy="215" r="4" strokeWidth="1.1" stroke="currentColor" />
+      <circle cx="116" cy="215" r="4" strokeWidth="1.1" stroke="currentColor" />
 
-      {/* MAIN BODY — square structure between and connecting the minarets */}
-      {/* Ground level with large pointed central arch */}
-      <rect x="36" y="196" width="108" height="84" rx="1" strokeWidth="1.5" stroke="currentColor" />
-      <path d="M62 278 L62 238 Q90 200 118 238 L118 278" strokeWidth="1.5" stroke="currentColor" />
-      {/* Side smaller arches at ground level */}
-      <path d="M38 278 L38 252 Q52 234 66 252 L66 278" strokeWidth="1.2" stroke="currentColor" />
-      <path d="M114 278 L114 252 Q128 234 142 252 L142 278" strokeWidth="1.2" stroke="currentColor" />
+      {/* Layer 2: Second floor */}
+      <rect x="45" y="168" width="90" height="32" rx="1" strokeWidth="1.4" stroke="currentColor" />
+      <line x1="54"  y1="168" x2="54"  y2="200" strokeWidth="0.8" stroke="currentColor" />
+      <line x1="68"  y1="168" x2="68"  y2="200" strokeWidth="0.8" stroke="currentColor" />
+      <line x1="82"  y1="168" x2="82"  y2="200" strokeWidth="0.8" stroke="currentColor" />
+      <line x1="96"  y1="168" x2="96"  y2="200" strokeWidth="0.8" stroke="currentColor" />
+      <line x1="110" y1="168" x2="110" y2="200" strokeWidth="0.8" stroke="currentColor" />
+      <line x1="124" y1="168" x2="124" y2="200" strokeWidth="0.8" stroke="currentColor" />
 
-      {/* Second floor with arched windows */}
-      <rect x="38" y="162" width="104" height="36" rx="1" strokeWidth="1.5" stroke="currentColor" />
-      <path d="M54 198 L54 178 Q68 162 82 178 L82 198" strokeWidth="1.2" stroke="currentColor" />
-      <path d="M98 198 L98 178 Q112 162 126 178 L126 198" strokeWidth="1.2" stroke="currentColor" />
+      {/* Layer 3: Top */}
+      <rect x="37" y="146" width="106" height="22" rx="1" strokeWidth="1.4" stroke="currentColor" />
+      <line x1="37" y1="155" x2="143" y2="155" strokeWidth="0.8" stroke="currentColor" />
 
-      {/* Third floor / clock parapet */}
-      <rect x="42" y="136" width="96" height="28" rx="1" strokeWidth="1.5" stroke="currentColor" />
-      <line x1="42" y1="150" x2="138" y2="150" strokeWidth="1" stroke="currentColor" />
+      {/* ── LEFT MINARET ── */}
 
-      {/* Top mosque level with small domes */}
-      <rect x="48" y="110" width="84" height="28" rx="1" strokeWidth="1.5" stroke="currentColor" />
-      <path d="M56 110 Q70 92 84 110" strokeWidth="1.2" stroke="currentColor" />
-      <path d="M96 110 Q110 92 124 110" strokeWidth="1.2" stroke="currentColor" />
+      {/* Lowest ring (y=168, matches main layer 2) */}
+      <rect x="8" y="168" width="36" height="32" rx="2" strokeWidth="1.3" stroke="currentColor" />
+      <line x1="7"  y1="184" x2="43" y2="184" strokeWidth="0.8" stroke="currentColor" />
+      <line x1="14" y1="168" x2="14" y2="200" strokeWidth="0.8" stroke="currentColor" />
+      <line x1="21" y1="168" x2="21" y2="200" strokeWidth="0.8" stroke="currentColor" />
+      <line x1="30" y1="168" x2="30" y2="200" strokeWidth="0.8" stroke="currentColor" />
+      <line x1="38" y1="168" x2="38" y2="200" strokeWidth="0.8" stroke="currentColor" />
+
+      {/* Shaft middle→lowest: thinner w=16, centered x=26 */}
+      <rect x="15" y="144" width="22" height="24" rx="1" strokeWidth="1.4" stroke="currentColor" />
+
+      {/* Middle ring (y=134..144) */}
+      <rect x="11" y="131" width="28" height="13" rx="2" strokeWidth="1.3" stroke="currentColor" />
+      <line x1="16" y1="131" x2="16" y2="144" strokeWidth="0.8" stroke="currentColor" />
+      <line x1="22" y1="131" x2="22" y2="144" strokeWidth="0.8" stroke="currentColor" />
+      <line x1="29" y1="131" x2="29" y2="144" strokeWidth="0.8" stroke="currentColor" />
+      <line x1="35" y1="131" x2="35" y2="144" strokeWidth="0.8" stroke="currentColor" />
+
+      {/* Shaft highest→middle: w=16, taller h=24 → y=110..134 */}
+      <rect x="18" y="110" width="16" height="21" rx="1" strokeWidth="1.4" stroke="currentColor" />
+
+      {/* Highest ring (y=100..110) — shifted up 10px from before */}
+      <rect x="13" y="100" width="26" height="10" rx="2" strokeWidth="1.3" stroke="currentColor" />
+      <line x1="17" y1="100" x2="17" y2="110" strokeWidth="0.8" stroke="currentColor" />
+      <line x1="23" y1="100" x2="23" y2="110" strokeWidth="0.8" stroke="currentColor" />
+      <line x1="29" y1="100" x2="29" y2="110" strokeWidth="0.8" stroke="currentColor" />
+      <line x1="35" y1="100" x2="35" y2="110" strokeWidth="0.8" stroke="currentColor" />
+
+      {/* Upper shaft (y=78..100) */}
+      <rect x="18" y="78" width="16" height="22" rx="1" strokeWidth="1.4" stroke="currentColor" />
+
+      {/* Dome — base y=78, apex y=58 */}
+      <path d="M17 78 Q26 58 35 78" strokeWidth="1.3" stroke="currentColor" />
+      {/* Circle between dome apex and finial */}
+      <circle cx="26" cy="65" r="3" strokeWidth="1.2" stroke="currentColor" />
+      {/* Finial */}
+      <line x1="26" y1="62" x2="26" y2="50" strokeWidth="1.3" stroke="currentColor" />
+
+      {/* Shaft below lowest ring to ground */}
+      <rect x="14" y="200" width="24" height="78" rx="1" strokeWidth="1.4" stroke="currentColor" />
+
+      {/* ── RIGHT MINARET ── */}
+
+      {/* Lowest ring */}
+      <rect x="136" y="168" width="36" height="32" rx="2" strokeWidth="1.3" stroke="currentColor" />
+      <line x1="135" y1="184" x2="172" y2="184" strokeWidth="0.8" stroke="currentColor" />
+      <line x1="142" y1="168" x2="142" y2="200" strokeWidth="0.8" stroke="currentColor" />
+      <line x1="150" y1="168" x2="150" y2="200" strokeWidth="0.8" stroke="currentColor" />
+      <line x1="159" y1="168" x2="159" y2="200" strokeWidth="0.8" stroke="currentColor" />
+      <line x1="166" y1="168" x2="166" y2="200" strokeWidth="0.8" stroke="currentColor" />
+
+      {/* Shaft middle→lowest: w=16, centered x=154 */}
+      <rect x="143" y="144" width="22" height="24" rx="1" strokeWidth="1.4" stroke="currentColor" />
+
+      {/* Middle ring */}
+      <rect x="140" y="131" width="28" height="13" rx="2" strokeWidth="1.3" stroke="currentColor" />
+      <line x1="145" y1="131" x2="145" y2="144" strokeWidth="0.8" stroke="currentColor" />
+      <line x1="150" y1="131" x2="150" y2="144" strokeWidth="0.8" stroke="currentColor" />
+      <line x1="157" y1="131" x2="157" y2="144" strokeWidth="0.8" stroke="currentColor" />
+      <line x1="163" y1="131" x2="163" y2="144" strokeWidth="0.8" stroke="currentColor" />
+
+      {/* Shaft highest→middle: w=16, taller h=24 → y=110..134 */}
+      <rect x="146" y="110" width="16" height="21" rx="1" strokeWidth="1.4" stroke="currentColor" />
+
+      {/* Highest ring (y=100..110) */}
+      <rect x="141" y="100" width="26" height="10" rx="2" strokeWidth="1.3" stroke="currentColor" />
+      <line x1="145" y1="100" x2="145" y2="110" strokeWidth="0.8" stroke="currentColor" />
+      <line x1="151" y1="100" x2="151" y2="110" strokeWidth="0.8" stroke="currentColor" />
+      <line x1="157" y1="100" x2="157" y2="110" strokeWidth="0.8" stroke="currentColor" />
+      <line x1="163" y1="100" x2="163" y2="110" strokeWidth="0.8" stroke="currentColor" />
+
+      {/* Upper shaft (y=78..100) */}
+      <rect x="146" y="78" width="16" height="22" rx="1" strokeWidth="1.4" stroke="currentColor" />
+
+      {/* Dome — base y=78, apex y=58 */}
+      <path d="M145 78 Q154 58 163 78" strokeWidth="1.3" stroke="currentColor" />
+      {/* Circle between dome apex and finial */}
+      <circle cx="154" cy="65" r="3" strokeWidth="1.2" stroke="currentColor" />
+      {/* Finial */}
+      <line x1="154" y1="62" x2="154" y2="50" strokeWidth="1.3" stroke="currentColor" />
+
+      {/* Shaft below lowest ring to ground */}
+      <rect x="142" y="200" width="24" height="78" rx="1" strokeWidth="1.4" stroke="currentColor" />
+
     </svg>
   )
 }
